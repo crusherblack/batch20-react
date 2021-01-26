@@ -29,8 +29,9 @@ function Content() {
     return(
         <div className="App-content">
             <p>This is Content with Function</p>
+            <button style={{marginBottom:20}} onClick={greeting}>Hitt Me !!!</button>
 
-            <button onClick={greeting}>Hitt Me !!!</button>
+            <img src="https://www.qureta.com/uploads/post/lola_zieta.png"/>
         </div>
     )
 }

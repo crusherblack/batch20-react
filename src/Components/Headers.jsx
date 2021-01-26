@@ -18,7 +18,7 @@ import React, {Component} from 'react'
 //     }
 //   }
 
-function Header() {
+function Header(props) {
 
     function getData(){
         return 11+9
@@ -28,7 +28,9 @@ function Header() {
 
     return(
         <div>
-            <h1>Wellcome Batch {getData()} {year} with Function</h1>
+            {/* <h1>Wellcome Batch {getData()} {year} with Function</h1> */}
+            <h1>{props.changeTitle}</h1>
+            <h1>{props.title2}</h1>
         </div>
     )
 }

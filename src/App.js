@@ -17,9 +17,11 @@ import Content from './Components/Content';
 // }
 
 function App() {
+
   return(
     <div className="App">
-      <Header />
+      <Header changeTitle="This is Custome Porps"
+              title2="Test" />
       <Content/>
     </div>
   )
