@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 //Import Components
-import Header from './Components/Headers';
-import Content from './Components/Content';
-import Increment from './Components/Increment';
+import Header from "./Components/Headers";
+import Content from "./Components/Content";
+import Increment from "./Components/Increment";
+import ConditionalRendering from "./Components/ConditionalRendering";
 
 // class App extends Component {
 //   render(){
@@ -18,16 +19,16 @@ import Increment from './Components/Increment';
 // }
 
 function App() {
-
-  return(
+  return (
     <div className="App">
-      <Header changeTitle="This is Custome Porps"
-              title2="Test" />
-      <Content/>
+      <Header changeTitle="This is Custome Porps" title2="Test" />
+      <Content />
 
-      <Increment/>
+      <Increment />
+
+      <ConditionalRendering />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
