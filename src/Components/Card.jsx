@@ -16,7 +16,7 @@ const Card = ({ film }) => {
       }}
     >
       <h2>{title}</h2>
-      <h2 className="text-green">{year}</h2>
+      <h2 className="text-success">{year}</h2>
     </div>
   );
 };
