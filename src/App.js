@@ -1,17 +1,21 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 //Import Components
 import Header from "./Components/Headers";
+import Navbar from "./Components/Navbar";
+import PrivateRoute from "./Components/PrivateRoute";
+
+//Import Pages
 import Content from "./pages/Content";
 import Increment from "./pages/Increment";
 import ConditionalRendering from "./pages/ConditionalRendering";
 import List from "./pages/List";
 import Modal from "./pages/Modal";
-import Navbar from "./Components/Navbar";
-import PrivateRoute from "./Components/PrivateRoute";
+import Todo from "./pages/Todo";
 
 // class App extends Component {
 //   render(){
@@ -29,7 +33,6 @@ function App() {
     <Router>
       <div>
         <Navbar />
-
         <Switch>
           <Route exact path="/">
             <Content />
@@ -42,6 +45,9 @@ function App() {
           </Route>
           <PrivateRoute exact path="/list" children={<List />} />
           <PrivateRoute exact path="/modal" children={<Modal />} />
+          <Route exact path="/todo">
+            <Todo />
+          </Route>
         </Switch>
       </div>
     </Router>

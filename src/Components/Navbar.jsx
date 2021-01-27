@@ -22,6 +22,9 @@ const NavbarComponent = () => {
         <Nav.Link to="/modal" as={Link}>
           React Bootstrap
         </Nav.Link>
+        <Nav.Link to="/todo" as={Link}>
+          Todo
+        </Nav.Link>
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
