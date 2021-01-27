@@ -32,15 +32,7 @@ const ConditionalRendering = () => {
         {status}
       </h1>
 
-      <h1
-        style={{
-          backgroundColor: "red",
-          color: "black",
-          fontSize: "30px",
-        }}
-      >
-        Belajar Show Modal
-      </h1>
+      <h1 className="text-green">Belajar Show Modal</h1>
       <div>
         <button onClick={toggleModalV2}>Toggle Modal</button>
       </div>

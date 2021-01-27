@@ -6,6 +6,7 @@ import Header from "./Components/Headers";
 import Content from "./Components/Content";
 import Increment from "./Components/Increment";
 import ConditionalRendering from "./Components/ConditionalRendering";
+import List from "./Components/List";
 
 // class App extends Component {
 //   render(){
@@ -27,6 +28,8 @@ function App() {
       <Increment />
 
       <ConditionalRendering />
+
+      <List />
     </div>
   );
 }
