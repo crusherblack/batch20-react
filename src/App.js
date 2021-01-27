@@ -11,6 +11,7 @@ import ConditionalRendering from "./pages/ConditionalRendering";
 import List from "./pages/List";
 import Modal from "./pages/Modal";
 import Navbar from "./Components/Navbar";
+import PrivateRoute from "./Components/PrivateRoute";
 
 // class App extends Component {
 //   render(){
@@ -39,8 +40,8 @@ function App() {
           <Route exact path="/conditional-rendering">
             <ConditionalRendering />
           </Route>
-          <Router exact path="/list" children={<List />} />
-          <Router exact path="/modal" children={<Modal />} />
+          <PrivateRoute exact path="/list" children={<List />} />
+          <PrivateRoute exact path="/modal" children={<Modal />} />
         </Switch>
       </div>
     </Router>
